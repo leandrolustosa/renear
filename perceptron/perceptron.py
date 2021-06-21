@@ -119,8 +119,7 @@ if __name__ == "__main__":
 
     plot_dataset(X, y)
     hiperplano = [1, -1]
-    vetor = perpendicular(hiperplano)
-    print(vetor)
+    vetor = perpendicular(hiperplano)    
     #plot_vetor(vetor)
 
     cfs = [CostPerceptron(), HingeLoss(), Adaline()]
@@ -133,5 +132,5 @@ if __name__ == "__main__":
         y_pred = perceptron.predict(X_test)
         accuracy(y_test, y_pred)
 
-        #plot_dataset(X_test, y_test)
-        #plot_vetor(perpendicular(hiperplano))
+        # plot_dataset(X_test, y_test)
+        # plot_vetor(perpendicular(hiperplano))
